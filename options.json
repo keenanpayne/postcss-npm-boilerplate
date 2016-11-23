@@ -1,5 +1,5 @@
 {
-  "use": ["autoprefixer"],
+  "use": ["autoprefixer", "postcss-mixins", "cssnano"],
   "input": "src/css/app.css",
   "output": "dist/css/app.css",
   "local-plugins": true,

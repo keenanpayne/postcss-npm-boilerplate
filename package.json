@@ -4,6 +4,18 @@
   "description": "Boilerplate for moving from Sass to PostCSS",
   "repository": "https://github.com/keenanpayne/postcss-sass-boilerplate.git",
   "author": "Keenan Payne <kpayne@slackrmedia.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "cssnano": "^3.8.0",
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.6.0",
+    "postcss-mixins": "^5.4.0"
+  },
+  "scripts": {
+    "build": "postcss -c options.json"
+  }
 }
-
