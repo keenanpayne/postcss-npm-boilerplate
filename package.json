@@ -1,0 +1,9 @@
+{
+  "name": "postcss-sass-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for moving from Sass to PostCSS",
+  "repository": "https://github.com/keenanpayne/postcss-sass-boilerplate.git",
+  "author": "Keenan Payne <kpayne@slackrmedia.com>",
+  "license": "MIT"
+}
+
