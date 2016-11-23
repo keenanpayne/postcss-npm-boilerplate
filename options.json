@@ -1,0 +1,12 @@
+{
+  "use": ["autoprefixer"],
+  "input": "src/css/app.css",
+  "output": "dist/css/app.css",
+  "local-plugins": true,
+  "autoprefixer": {
+    "browsers": "> 5%"
+  },
+  "postcss-cachify": {
+    "baseUrl": "/"
+  }
+}
