@@ -1,0 +1,6 @@
+$display: flex;
+
+.border {
+  display: $display;
+  position: relative;
+}
