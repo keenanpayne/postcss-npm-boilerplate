@@ -1,8 +1,8 @@
 {
-  "name": "postcss-sass-boilerplate",
-  "version": "0.0.1",
-  "description": "Boilerplate for moving from Sass to PostCSS",
-  "repository": "https://github.com/keenanpayne/postcss-sass-boilerplate.git",
+  "name": "postcss-npm-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for using NPM and PostCSS to handle front-end tasks (pre-processing, minification, post-processing)",
+  "repository": "https://github.com/keenanpayne/postcss-npm-boilerplate.git",
   "author": "Keenan Payne <contact@keenanpayne.com>",
   "license": "MIT",
   "engines": {
@@ -21,7 +21,9 @@
     "stylelint": "^7.6.0"
   },
   "scripts": {
-    "start": "postcss -c postcss.json",
-    "build": "postcss -w -c postcss.json "
+    "start": "postcss -w -c postcss.json",
+    "build": "postcss -c postcss.json",
+    "format": "stylefmt src/css/app.css",
+    "compile": "npm run build && npm run format"
   }
 }

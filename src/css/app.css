@@ -1,15 +1,18 @@
 /**
  * Variables, Autoprefixer & Nested Elements
  */
-
 $display: flex;
 
 .element {
   display: $display;
 
-  &:hover { background: white; }
+  &:hover {
+    background: white;
+  }
 
-  .element-child { position: relative; }
+  .element-child {
+    position: relative;
+  }
 }
 
 
@@ -38,7 +41,7 @@ $display: flex;
   .icon.icon-$(name) {
     color: $(color);
 
-    @mixin-content;
+    @mixin-content  ;
   }
 }
 
