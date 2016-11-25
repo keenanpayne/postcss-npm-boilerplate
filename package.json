@@ -1,7 +1,7 @@
 {
   "name": "postcss-npm-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for using NPM and PostCSS to handle front-end tasks (pre-processing, minification, post-processing)",
+  "description": "This is a simple boilerplate for using NPM and PostCSS to handle common front-end development environments.",
   "repository": "https://github.com/keenanpayne/postcss-npm-boilerplate.git",
   "author": "Keenan Payne <contact@keenanpayne.com>",
   "license": "MIT",
