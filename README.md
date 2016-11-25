@@ -19,19 +19,19 @@ This boilerplate features many features similar to [Sass](http://sass-lang.com/)
 
 This boilerplate relies only on NPM scripts as the build tool. Included build processes are as follows:
 
-### `npm start`
+#### `npm start`
 
 Compiles the `/src/css/app.css` file and outputs to `/dist/css/app.css`. This command watches the file tree inside of `/src/css` for changes and recompiles when necessary.
 
-### `npm run build`
+#### `npm run build`
 
 Only compiles the `/src/css/app.css` file and outputs to `/dist/css/app.css` without watching the file tree.
 
-### `npm run stylefmt`
+#### `npm run stylefmt`
 
 Uses a combination of [stylelint](http://stylelint.io/) and [stylemt](https://github.com/morishitter/stylefmt) PostCSS plugins to organize **source** CSS files according to style lint rules (located in `.stylelintrc`).
 
-### `npm run compile`
+#### `npm run compile`
 
 Runs both the `build` and `stylefmt` commands to build distribution files and format source files.
 
