@@ -13,7 +13,25 @@ This is a simple boilerplate for using [NPM](https://www.npmjs.com/) and [PostCS
 
 ## Features
 
-This boilerplate features many features similar to [Sass](http://sass-lang.com/).
+This boilerplate features many features similar to [Sass](http://sass-lang.com/) without including the entire feature-set. I have hand-picked the functionality that I use most commonly in my projects.
+
+### Variables
+
+```
+$display: flex;
+
+.element {
+  display: $display;
+}
+```
+
+**Compiles To:**
+
+```
+.element {
+  display: flex;
+}
+```
 
 ## Scripts
 
