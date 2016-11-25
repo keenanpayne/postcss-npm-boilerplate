@@ -17,11 +17,11 @@ $display: flex;
  * Loops
  */
 
- @each $icon in (foo, bar, baz) {
-   .icon-$icon {
-     background: url('path/to/$icon.png');
-   }
- }
+@each $icon in (foo, bar, baz) {
+  .icon-$icon {
+    background: url('path/to/$icon.png');
+  }
+}
 
 @for $index from 1 to 5 by 2 {
   .col-$index {
@@ -34,25 +34,25 @@ $display: flex;
  * Mixins
  */
 
- @define-mixin icon $name, $color {
-   .icon.icon-$(name) {
-     color: $(color);
+@define-mixin icon $name, $color {
+  .icon.icon-$(name) {
+    color: $(color);
 
-     @mixin-content;
-   }
- }
+    @mixin-content;
+  }
+}
 
- @mixin icon twitter, black {
-   background-image: url(path/to/icon.png);
- }
+@mixin icon twitter, black {
+  background-image: url(path/to/icon.png);
+}
 
 
 /**
  * Custom Breakpoints
  */
 
- @custom-media --small-max (max-width: 30em);
+@custom-media --small-max (max-width: 30em);
 
- @media (--small-max) {
-   /* styles for small viewport */
- }
+@media (--small-max) {
+  /* styles for small viewport */
+}
