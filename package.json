@@ -16,7 +16,9 @@
     "postcss-custom-media": "^5.0.1",
     "postcss-import": "^8.2.0",
     "postcss-mixins": "^5.4.0",
-    "postcss-nested": "^1.0.0"
+    "postcss-nested": "^1.0.0",
+    "stylefmt": "^5.0.0",
+    "stylelint": "^7.6.0"
   },
   "scripts": {
     "start": "postcss -c postcss.json",
