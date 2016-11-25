@@ -25,11 +25,37 @@ $display: flex;
 }
 ```
 
-**Compiles To:**
+Compiles To:
 
 ```
 .element {
   display: flex;
+}
+```
+
+### Nested Elements
+
+```
+.element {
+  &:hover {
+    background: white;
+  }
+
+  .element-child {
+    position: relative;
+  }
+}
+```
+
+Compiles to:
+
+```
+.element:hover {
+  background: white;
+}
+
+.element .element-child {
+  position: relative;
 }
 ```
 
