@@ -133,6 +133,10 @@ Compiles the `/src/css/app.css` file and outputs to `/dist/css/app.css`. This co
 
 Only compiles the `/src/css/app.css` file and outputs to `/dist/css/app.css` without watching the file tree.
 
+#### `npm run minify`
+
+Uses cssnano to minify the `/dist/css/app.css` file and output a minified version to `/dist/css/app.min.css`.
+
 #### `npm run stylefmt`
 
 Uses a combination of [stylelint](http://stylelint.io/) and [stylemt](https://github.com/morishitter/stylefmt) PostCSS plugins to organize **source** CSS files according to style lint rules (located in `.stylelintrc`).
