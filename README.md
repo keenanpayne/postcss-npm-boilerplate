@@ -6,14 +6,14 @@ This is a simple boilerplate for using [NPM](https://www.npmjs.com/) and [PostCS
 
 1. Clone the repository
  * `git clone https://github.com/keenanpayne/postcss-npm-boilerplate.git`
-2. Install [Yarn Package Manager](https://yarnpkg.com/en/docs/install). You may alternatively use NPM as you may already be used to. I recommend Yarn for easier and more expedited package installation.
+2. **(optional)** Install [Yarn Package Manager](https://yarnpkg.com/en/docs/install). Alternatively, you can use NPM as you may already be used to. I recommend Yarn for easier and more expedited package installation.
 3. Install dependencies
  * **Using Yarn:** `yarn`
  * **Using NPM:** `npm install`
 
 ## Features
 
-This boilerplate features many features similar to [Sass](http://sass-lang.com/) without including the entire feature-set. I have hand-picked the functionality that I use most commonly in my projects.
+This boilerplate features many features similar to [Sass](http://sass-lang.com/) without including the entire feature set. I have hand-picked the functionality that I use most commonly in my projects.
 
 ### Variables
 
@@ -56,6 +56,68 @@ Compiles to:
 
 .element .element-child {
   position: relative;
+}
+```
+
+### Loops
+
+```
+@each $icon in (foo, bar, baz) {
+  .icon-$icon {
+    background: url('path/to/$icon.png');
+  }
+}
+
+@for $index from 1 to 5 by 2 {
+  .col-$index {
+    width: $(index)0%;
+  }
+}
+```
+
+Compiles to:
+
+```
+.icon-foo {
+  background: url('path/to/foo.png');
+}
+
+.icon-bar {
+  background: url('path/to/bar.png');
+}
+
+.icon-baz {
+  background: url('path/to/baz.png');
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-5 {
+  width: 50%;
+}
+```
+
+### Custom Breakpoints
+
+```
+@custom-media --small-max (max-width: 30em);
+
+@media (--small-max) {
+  /* styles for small viewport */
+}
+```
+
+Compiles to:
+
+```
+@media (max-width: 30em) {
+  /* styles for small viewport */
 }
 ```
 

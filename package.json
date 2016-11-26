@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
-    "cssnano": "^3.8.0",
+    "cssnano-cli": "^1.0.5",
     "postcss-advanced-variables": "^1.2.2",
     "postcss-cli": "^2.6.0",
     "postcss-custom-media": "^5.0.1",
@@ -22,8 +22,9 @@
   },
   "scripts": {
     "start": "postcss -w -c postcss.json",
-    "build": "postcss -c postcss.json",
+    "build": "postcss -c postcss.json && npm run minify",
+    "minify": "cssnano dist/css/app.css dist/css/app.min.css --safe",
     "format": "stylefmt src/css/app.css",
-    "compile": "npm run build && npm run format"
+    "compile": "npm run build && npm run minify && npm run format"
   }
 }

@@ -5,8 +5,7 @@
     "postcss-mixins",
     "postcss-custom-media",
     "postcss-nested",
-    "autoprefixer",
-    "cssnano"
+    "autoprefixer"
   ],
   "input": "src/css/app.css",
   "output": "dist/css/app.css",
