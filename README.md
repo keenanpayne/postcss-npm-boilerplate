@@ -143,14 +143,19 @@ Uses a combination of [stylelint](http://stylelint.io/) and [stylemt](https://gi
 
 #### `npm run compile`
 
-Runs both the `build` and `stylefmt` commands to build distribution files and format source files.
+Runs the `clean`, `build` and `stylefmt` commands to clean the `/dist` directory as well as build distribution files and format source files.
+
+#### `npm run clean`
+
+Deletes all files from the `/dist` directory.
 
 ## Plugins
 
 This boilerplate relies on the following PostCSS plugins:
 
 - [autoprefixer](https://github.com/postcss/autoprefixer)
-- [cssnano](http://cssnano.co/)
+- [del-cli](https://www.npmjs.com/package/del-cli)
+- [cssnano-cli](https://www.npmjs.com/package/cssnano-cli)
 - [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables)
 - [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
 - [postcss-import](https://github.com/postcss/postcss-import)
