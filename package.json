@@ -2,14 +2,27 @@
   "name": "postcss-npm-boilerplate",
   "version": "1.0.0",
   "description": "This is a simple boilerplate for using NPM and PostCSS to handle common front-end development environments.",
-  "repository": "https://github.com/keenanpayne/postcss-npm-boilerplate.git",
   "author": "Keenan Payne <contact@keenanpayne.com>",
   "license": "MIT",
+  "homepage": "https://github.com/keenanpayne/postcss-npm-boilerplate#readme",
+  "keywords": [
+    "css",
+    "postcss",
+    "boilerplate"
+  ],
   "engines": {
     "node": ">=6.2.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenanpayne/postcss-npm-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keenanpayne/postcss-npm-boilerplate/issues"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
+    "del-cli": "^0.2.0",
     "cssnano-cli": "^1.0.5",
     "postcss-advanced-variables": "^1.2.2",
     "postcss-cli": "^2.6.0",
@@ -25,6 +38,7 @@
     "build": "postcss -c postcss.json && npm run minify",
     "minify": "cssnano dist/css/app.css dist/css/app.min.css --safe",
     "format": "stylefmt src/css/app.css",
-    "compile": "npm run build && npm run minify && npm run format"
+    "compile": "npm run clean && npm run build && npm run minify && npm run format",
+    "clean": "del dist/**/*"
   }
 }
