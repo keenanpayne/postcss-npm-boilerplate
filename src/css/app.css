@@ -1,8 +1,12 @@
 /**
+ * Imports
+ */
+@import "_variables.css";
+
+
+/**
  * Variables, Autoprefixer & Nested Elements
  */
-$display: flex;
-
 .element {
   display: $display;
 
@@ -19,7 +23,6 @@ $display: flex;
 /**
  * Loops
  */
-
 @each $icon in (foo, bar, baz) {
   .icon-$icon {
     background: url('path/to/$icon.png');
@@ -36,7 +39,6 @@ $display: flex;
 /**
  * Mixins
  */
-
 @define-mixin icon $name, $color {
   .icon.icon-$(name) {
     color: $(color);
@@ -53,7 +55,6 @@ $display: flex;
 /**
  * Custom Breakpoints
  */
-
 @custom-media --small-max (max-width: 30em);
 
 @media (--small-max) {

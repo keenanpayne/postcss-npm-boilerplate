@@ -15,6 +15,14 @@ This is a simple boilerplate for using [NPM](https://www.npmjs.com/) and [PostCS
 
 This boilerplate features many features similar to [Sass](http://sass-lang.com/) without including the entire feature set. I have hand-picked the functionality that I use most commonly in my projects.
 
+### Imports
+
+Imports are handled similar to Sass. You can may import a file by doing the following:
+
+```
+@import "_variables.css";
+```
+
 ### Variables
 
 ```
